@@ -6,7 +6,7 @@
 // let h1 = document.querySelector('h1')
 // let h1 = document.querySelector('#heading')
 // let h1 = document.querySelectorAll('.heading')
-let h1 = document.querySelector('span')
+// let h1 = document.querySelector('span')
 // let body = document.querySelector('body')
 
 
@@ -39,7 +39,7 @@ let h1 = document.querySelector('span')
 //     // if(box.classList.contains('active')) {
 //     //     box.classList.remove('active')
 //     // } else {
-//     //     box.classList.add('active') 
+        // box.classList.add('active') 
 //     // }
 //     // box.classList.toggle('active')
 
@@ -62,8 +62,8 @@ let h1 = document.querySelector('span')
 let boxes = document.querySelectorAll('.box')
 
 
-boxes.forEach(elem => {
-    elem.onmouseenter = () => {
-        elem.classList.add('active')
+boxes.forEach(item => {
+    item.onclick = () => {
+        item.classList.add('active')
     }
 })
